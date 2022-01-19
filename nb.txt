@@ -1,0 +1,46 @@
+formation : git docker 
+kol version ywarihelna
+req: working tree , staging area , local repository  ((add)track -> (commit)commit)
+git init 
+git add .
+git commit 
+
+git commit -a -m
+git add *.html
+git log ( nchouf les commit li sarou)
+git log -n 2 ( les 2 derniers commit)
+git log --oneline
+git diff ( ta3tik ekher haja saretelha commit w cdetails de modification)
+git checkout b79f60b=> selon pour observation
+nheb nraja3 fichier html kima ken => git checkout b79f60b index.html => ba3d na3ml commit mt3ou
+git revert id => tna7i el commit al etape heki
+git revert id index.html =>defaire les modf li sarou al fichier
+git resetgit reset id => il gardera dossier de travail tel qu'il est ama l'historique sera altérée (ken ki na3ml hard)
+git reset HEAD index.html --hard ( revient lel commit li khtarneh et il supprime les mod li sarou 9bal) 
+git branch redesign
+git checkout redesign
+(todkhol lmaster)git merge redesign
+git reset HEAD^^ (nerja3 bel commit en arriere 2 etape)
+fama git merge redesign / git merge --no-ff hotfix-html (tsir conflit)
+
+manipuler l'historique
+git checkout redesign 
+git rebase master (master howa li bech neb3htou)
+git checkout master 
+git merge redesign 
+rebase ( rapatrié les diff
+git stash ( ekher version ykhazanha fl memoire)
+git stash save ajout du css
+git stash list ( nchouf chkhalit fel memoire)
+git stash apply (tsir el modif el jdida al eli tsajel fel memoire)
+git stash drop (pour effacer la mod li saret)
+git stash pop stash@{1}
+git stash show stash@{1}
+
+github (client git)
+git init --bare (pour dire que c un dossier depot)
+
+
+
+
+
